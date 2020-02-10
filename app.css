@@ -1,0 +1,269 @@
+:root {
+    --bg-body : #E9E9E9;
+    --white: #ffffff;
+    --green: #00DC02;
+    --text-muted :   rgb(108, 117, 125);
+}
+* {
+    clear: both;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+
+body {
+      background-color: #E9E9E9;
+      color: #a1a1a1;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 0;
+  }
+
+  .p-10 {
+      padding: 10px;
+  }
+
+  .p-20 {
+    padding: 20px;
+}
+
+.bg-theme {
+      background-color: #7C1350;
+  }
+
+  .bg-dark {
+    background-color: #000000;
+    }
+
+
+  .overflow-hidden {
+      overflow: hidden;
+  }
+
+  .wp-100 {
+      width: 100%;
+  }
+  
+  .m-0 {
+      margin: 0;
+  }
+  .mr-5 {
+    margin-right: 5px;
+  }
+  .ml-5 {
+    margin-left: 5px;
+  }
+  .p-0 {
+    padding: 0;
+    }
+
+  .mt-5 {
+      margin-top: 5px;
+  }
+
+  .mt-15 {
+    margin-top: 15px;
+}
+
+  .mb-5 {
+      margin-bottom: 5px;
+  }
+  
+
+  .main {
+      background-color: white;
+      color: #000000;
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 5rem;
+      width: 100%;
+  }
+  
+  .left, .right {
+    overflow: hidden;
+    height: auto;
+    padding: 4px;
+    flex:1;
+    }
+  .left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    
+  }
+  
+  .left-btn {
+    width: 150px;
+    margin-left: auto;
+  }
+  
+  button {
+    cursor: pointer;
+}
+
+.btn {
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #343a40;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-sm {
+   padding: 1px 6px;;
+}
+  
+  
+  
+  .left-title {
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: var(--white);
+  }
+  
+  .pasta, .drink{
+      flex: 1 0 50%;
+      overflow: hidden;
+      height: auto;
+      
+  }
+  
+  .pasta > button {
+   float: right;
+   margin-bottom: 10px;
+  }
+  
+  .box {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 25px 0 25px 25px;
+    min-width: 425px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  
+  
+  .box-img img {
+    margin-left: auto;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+   
+  }
+
+  .box-content {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .box-content > button{
+      border-radius: 50px;
+  }
+
+.flex {
+    display: flex;
+}
+
+.flex-justify-sb {
+    justify-content: space-between;
+}
+.flex-1 {
+    flex:1;
+}
+
+.f-align-item-c {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-size-s {
+    font-size: 0.75rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-green {
+    color: green;
+
+}
+
+.text-theme {
+    color: #7C1350;
+
+}
+
+.text-white {
+    color: white;
+
+}
+
+  @media(max-width: 1200px) {
+      
+
+      .main {
+        flex-wrap: wrap;
+      }
+
+      .right, .left {
+          flex:auto
+      }
+
+      .left {
+        margin-right: 0;
+      }
+
+      .right {
+        margin-left: 0;
+      }
+  }
+
+  @media(max-width: 770px) {
+      
+    .main {
+        padding: 0;
+    }
+
+    .left-header, .right-header {
+        padding: 0 1rem;
+    }
+
+    .left-btn {
+        margin-right: 1rem;
+    }
+
+    .left, .right {
+        padding: 0;
+    }
+
+    .left {
+        margin-bottom: 10px;
+    }
+    
+}
+
